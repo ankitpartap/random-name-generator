@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Call</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Who's the next...</h2>
+    <div class="main">
+      <center>
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_chkytin8.json" background="transparent"
+          speed="1" style="width: 400px; height: 400px;" autoplay>
+        </lottie-player>
+      </center>
+    </div>
+    <h1 class="name1">Refresh Me</h1>
+  </div>
+  <script src="name.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        var preloader = document.querySelector(".main");
+        preloader.style.display = "none";
+        var name2 = document.querySelector(".name1")
+        name2.style.visibility = "visible";
+
+      }, 5000); // 3000 milliseconds = 3 seconds
+    });
+  </script>
+
+</body>
+
+</html>
